@@ -1,0 +1,48 @@
+sample1:
+S -> S+T | T
+T -> T*F | F
+F -> (E) | id
+
+Expected Output:
+F -> (E) | id 
+S -> TS'
+T -> FT'
+S' -> +TS' | ε
+T' -> *FT' | ε
+
+sample2:
+S -> apple | apply | application | ball | bat | bath | Xb
+X -> ab | ac | ad
+
+Expected Output:
+S -> applS' | baS'' | Xb
+S' -> e | y | ication
+S'' -> ll | tS''
+S''' -> h | ε
+X -> aX'
+X' -> b | c | d
+
+sample3:
+S -> AB
+A -> a | ε
+B -> b
+
+Expected Output:
+FIRST(S) = { a, b }
+FIRST(A) = { a, ε }
+FIRST(B) = { b }
+FOLLOW(S) = { $ }
+FOLLOW(A) = { b }
+FOLLOW(B) = { $ }
+
+sample4:
+S -> AB
+A -> aA | ε
+B -> b
+
+sample5:
+S -> S+T | T
+T -> T*F | F
+F -> (S) | id
+
+id+id*id
