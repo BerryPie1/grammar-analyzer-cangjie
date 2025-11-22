@@ -19,6 +19,7 @@ main(): Int64 {
     }
     
     let grammar = Grammar(strs)
+    println("Original grammar:")
     grammar.print()
 
     grammar.eliminateLeftRecursion()
