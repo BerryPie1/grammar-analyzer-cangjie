@@ -1,0 +1,30 @@
+{
+  "resolves": [
+    {
+      "rootPackageName": "lab3",
+      "modulePath": ".",
+      "packagePath": "E:\\Homework\\byyl\\projects\\grammar-analyzer-cangjie\\src",
+      "fullName": "lab3",
+      "isMacroPackage": false,
+      "output-type": "executable",
+      "compile-option": "",
+      "native-compile-option": "",
+      "customized-option": {},
+      "link-option": "",
+      "native-link-option": "",
+      "requires": [],
+      "std-requires": [
+        "std.collection",
+        "std.env",
+        "std.sort"
+      ],
+      "c_libs": {},
+      "hasTestFiles": false,
+      "hasProdFiles": true,
+      "hasTestsInProdFiles": false,
+      "accessLevel": "public"
+    }
+  ],
+  "binDeps": {},
+  "crossBinDeps": {}
+}
